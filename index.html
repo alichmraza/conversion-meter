@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Conversions</title>
+      <style>
+            body {
+                  /* background: #00c4ff; */
+                  margin: 0px
+            }
+
+            #length {
+                  width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  margin-left: 0.5%;
+            }
+            #h11 {
+                  font-size: 20px;
+                  margin-top: 0%;
+                  margin-left: 12%;
+                  /* text-align:center; */
+            }
+            #Power{
+                width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  text-align: center;
+                  margin-left: 0%;
+            }
+            #h15{
+                font-size: 20px;
+                margin-top: -2%;
+                margin-right: 13%;
+                margin-left: 12%;
+            }
+            #h12 {
+                  /* text-align: center; */
+                  font-size: 20px;
+                  margin-top: 0%;
+            }
+            #Mass {
+                  width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  text-align: center;
+                  margin-left: 0%;
+            }
+
+            #h13 {
+                  font-size: 20px;
+                  margin-top: 0%;
+                  /* margin-left: 0%; */
+                  /* text-align: center; */
+            }
+
+            .a { background: #26ff00; height: 500px; display: block}
+
+            .b {background: hsla(202, 83%, 50%, 0.959);height:500px; width: 100%}
+             
+             .c{background: #26ff00; height: 300px; display: block}
+            #Time{
+                  width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  margin-left: 0.5%; 
+            }
+            #h14{
+                  font-size: 20px;
+                  margin-top: 0%;
+                  margin-left: 12%;
+            }
+            #h15{
+                  font-size: 20px;
+                  margin-top: 0%;
+                  margin-right: 13%;
+                  margin-left: 12%;
+                  }
+            #Energy{
+                  font-size: 10px;
+                  width: 33%;
+                  float: right;
+                  margin-right: 0.5%;
+                  text-align: right;
+            }      
+            #h16{
+                  font-size: 20px;
+                  margin-right: 14%;
+                  margin-top: 0%;
+                  }
+             #Volume{
+                  font-size: 10px;
+                  width: 33%;
+                  float: right;
+                  margin-right: 0.5%;
+                  text-align: right;
+            } 
+            #h17{
+                  font-size: 20px;
+                  margin-right: 14%;
+                   margin-top: -3.3%; 
+            }
+            #Angle{
+                  width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  margin-left: 0.5%;
+            }
+            #h18{
+                  font-size: 20px;
+                  margin-top: 0%;
+                  margin-left: 12%;
+            }
+
+
+
+      </style>
+</head>
+
+<body>
+
+            <div class="a">
+            <div id="length">
+            <h1 id="h11">Length Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="meter" id='metertoyard' onkeyup="document.getElementById('yardtometer').value = this.value*1.09361"> =
+            <input type="number" placeholder="Yard" id="yardtometer" onkeyup="document.getElementById('metertoyard').value = this.value/1.09361">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="meter" id='metertofoot' onkeyup="document.getElementById('foottometer').value = this.value*3.28084"> =
+            <input type="number" placeholder="foot" id="foottometer" onkeyup="document.getElementById('metertofoot').value = this.value/3.28084">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="meter" id='metertoinch' onkeyup="document.getElementById('inchtometer').value = this.value/0.0254"> =
+            <input type="number" placeholder="inch" id="inchtometer" onkeyup="document.getElementById('metertoinch').value = this.value*0.0254">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="meter" id='metertokilometer' onkeyup="document.getElementById('kilometertometer').value = this.value/1000"> =
+            <input type="number" placeholder="kilometer" id="kilometertometer" onkeyup="document.getElementById('metertokilometer').value = this.value*1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="meter" id='metertocentimeter' onkeyup="document.getElementById('centimetertometer').value = this.value*100"> =
+            <input type="number" placeholder="centimeter" id="centimetertometer" onkeyup="document.getElementById('metertocentimeter').value = this.value/100">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="kilometer" id='kilometertomiles' onkeyup="document.getElementById('milestokilometer').value = this.value*0.62137"> =
+            <input type="number" placeholder="miles" id="milestokilometer" onkeyup="document.getElementById('kilometertomiles').value = this.value/0.62137">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="Nautical mile" id='Nauticalmiletomiles' onkeyup="document.getElementById('milestoNauticalmile').value = this.value/0.868976"> =
+            <input type="number" placeholder="miles" id="milestoNauticalmile" onkeyup="document.getElementById('Nauticalmiletomiles').value = this.value*0.868976">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="centimeter" id='centimetertomilimeter' onkeyup="document.getElementById('milimetertocentimeter').value = this.value*10"> =
+            <input type="number" placeholder="milimeter" id="milimetertocentimeter" onkeyup="document.getElementById('centimetertomilimeter').value = this.value/10">
+            </p>
+            <p>
+            <br>
+            <br>
+            <input type="number" placeholder="Cubic foot" id='Cubicfoottocubicinch' onkeyup="document.getElementById('cubicinchtocubicfoot').value = this.value*1728"> =
+            <input type="number" placeholder="Cubic inch" id="cubicinchtocubicfoot" onkeyup="document.getElementById('cubicfoottocubicinch').value = this.value/1728">
+            </p>
+            <br>
+            </div>
+            <div id="Mass">
+            <h1 id="h13">Mass Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="gram" id='gramtokilogram' onkeyup="document.getElementById('kilogramtogram').value = this.value /1000"> =
+            <input type="number" placeholder="kilogram" id="kilogramtogram" onkeyup="document.getElementById('gramtokilogram').value = this.value*1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="gram" id='gramtomiligram' onkeyup="document.getElementById('miligramtogram').value = this.value *1000"> =
+            <input type="number" placeholder="miligram" id="miligramtogram" onkeyup="document.getElementById('gramtomiligram').value = this.value/1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="gram" id='gramtomicrogram' onkeyup="document.getElementById('microgramtogram').value = this.value *1000000"> =
+            <input type="number" placeholder="microgram" id="microgramtogram" onkeyup="document.getElementById('gramtomicrogram').value = this.value/1000000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="gram" id='gramtonanogram' onkeyup="document.getElementById('nanogramtogram').value = this.value *1000000000"> =
+            <input type="number" placeholder="nanogram" id="nanogramtogram" onkeyup="document.getElementById('gramtonanogram').value = this.value/1000000000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="kilogram" id='kilogramtometrictone' onkeyup="document.getElementById('metrictonetokilogram').value = this.value /1000"> =
+            <input type="number" placeholder="metrictone" id="metrictonetokilogram" onkeyup="document.getElementById('kilogramtometrictone').value = this.value*1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="kilogram" id='kilogramtoa.m.u' onkeyup="document.getElementById('a.m.utokilogram').value = this.value /0.00000000000000000000000000166"> =
+            <input type="number" placeholder="a.m.u" id="a.m.utokilogram" onkeyup="document.getElementById('kilogramtoa.m.u').value = this.value*0.00000000000000000000000000166">
+            </p>
+            <br>
+            </div>
+            <div id="Energy">
+            <h1 id="h16">Energy Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="joule" id='jouletoelectronvolt' onkeyup="document.getElementById('electronvolttojoule').value = this.value /0.00000000000000000016021"> =
+            <input type="number" placeholder="electronvolt" id="electronvolttojoule" onkeyup="document.getElementById('jouletoelectronvolt').value = this.value*0.00000000000000000016021">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="joule" id='jouletocalorie' onkeyup="document.getElementById('calorietojoule').value = this.value /4.2"> =
+            <input type="number" placeholder="calorie" id="calorietojoule" onkeyup="document.getElementById('jouletocalorie').value = this.value*4.2">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="joule" id='jouletoB.T.U' onkeyup="document.getElementById('B.T.Utojoule').value = this.value /1055"> =
+            <input type="number" placeholder="B.T.U" id="B.T.Utojoule" onkeyup="document.getElementById('jouletoB.T.U').value = this.value*1055">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="a.m.u" id='a.m.utoMelectronvolt' onkeyup="document.getElementById('Melectronvolttoa.m.u').value = this.value *931.5"> =
+            <input type="number" placeholder="Mev" id="Melectronvolttoa.m.u" onkeyup="document.getElementById('a.m.utoMelectronvolt').value = this.value/931.5">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="kilogram" id='kilogramtoMelectronvolt' onkeyup="document.getElementById('Melectronvolttokilogram').value = this.value *560843373500000000000000000000"> =
+            <input type="number" placeholder="Mev" id="Melectronvolttokilogram" onkeyup="document.getElementById('kilogramtoMelectronvolt').value = this.value/560843373500000000000000000000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="electronvolt" id='electronvolttoMelectronvolt' onkeyup="document.getElementById('Melectronvolttoelectronvolt').value = this.value /1000000"> =
+            <input type="number" placeholder="Mev" id="Melectronvolttoelectronvolt" onkeyup="document.getElementById('electronvolttoMelectronvolt').value = this.value*1000000">
+            </p>
+            <br>
+            </div>
+            </div>
+            <div class="b">
+            <div id="Time">
+            <h1 id="h14">Time Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="Day" id='daytominute' onkeyup="document.getElementById('minutetoday').value = this.value *1440"> =
+            <input type="number" placeholder="minute" id="minutetoday" onkeyup="document.getElementById('daytominute').value = this.value/1440">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="hour" id='hourtominute' onkeyup="document.getElementById('minutetohour').value = this.value *60"> =
+            <input type="number" placeholder="minute" id="minutetohour" onkeyup="document.getElementById('hourtominute').value = this.value/60">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="hour" id='hourtosecond' onkeyup="document.getElementById('secondtohour').value = this.value *3600"> =
+            <input type="number" placeholder="second" id="secondtohour" onkeyup="document.getElementById('hourtosecond').value = this.value/3600">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="mimute" id='minutetosecond' onkeyup="document.getElementById('secondtominute').value = this.value *60"> =
+            <input type="number" placeholder="second" id="secondtominute" onkeyup="document.getElementById('minutetosecond').value = this.value/60">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="year" id='yeartosecond' onkeyup="document.getElementById('secondtoyear').value = this.value *(365*24*3600)"> =
+            <input type="number" placeholder="second" id="secondtoyear" onkeyup="document.getElementById('yeartosecond').value = this.value/(365*24*3600)">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="year" id='yeartominute' onkeyup="document.getElementById('minutetoyear').value = this.value *(365*24*60)"> =
+            <input type="number" placeholder="minute" id="minutetoyear" onkeyup="document.getElementById('yeartominute').value = this.value/(365*24*60)">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="year" id='yeartohour' onkeyup="document.getElementById('hourtoyear').value = this.value *(365*24)"> =
+            <input type="number" placeholder="hour" id="hourtoyear" onkeyup="document.getElementById('yeartohour').value = this.value/(365*24)">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="year" id='yeartoweek' onkeyup="document.getElementById('weektoyear').value = this.value *52.1429"> =
+            <input type="number" placeholder="Week" id="weektoyear" onkeyup="document.getElementById('yeartoweek').value = this.value/52.1429">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="Century" id='centurytoday' onkeyup="document.getElementById('daytocentury').value = this.value *36500"> =
+            <input type="number" placeholder="Day" id="daytocentury" onkeyup="document.getElementById('centurytoday').value = this.value/36500">
+            </p>
+            <br>
+            </div>
+            <div id="Power">
+            <h1 id="h15">Power Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="watt" id='watttohorsepower' onkeyup="document.getElementById('horsepowertowatt').value = this.value/746"> =
+            <input type="number" placeholder="horsepower" id="horsepowertowatt" onkeyup="document.getElementById('watttohorsepower').value = this.value*746">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="kwh" id='kwhtomegajoule' onkeyup="document.getElementById('megajouletokwh').value = this.value*3.6"> =
+            <input type="number" placeholder="Megajoule" id="megajouletokwh" onkeyup="document.getElementById('kwhtomegajoule').value = this.value/3.6">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="(ft*lb)/sec" id='(ft*lb)/sectohorsepower' onkeyup="document.getElementById('horsepowerto(ft*lb)/sec').value = this.value/550"> =
+            <input type="number" placeholder="horsepower" id="horsepowerto(ft*lb)/sec" onkeyup="document.getElementById('(ft*lb)/sectohorsepower').value = this.value*550">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="Watt" id='watttojoule' onkeyup="document.getElementById('jouletowatt').value = this.value*3600"> =
+            <input type="number" placeholder="Joule" id="jouletowatt" onkeyup="document.getElementById('watttojoule').value = this.value/3600">
+            </p>
+            <br>
+            <div>
+            <h1 id="h12">Temperature Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="centigrade" id='centigradetokelvin' onkeyup="document.getElementById('kelvintocentigrade').value = Number(this.value) + 273"> =
+            <input type="number" placeholder="kelvin" id="kelvintocentigrade" onkeyup="document.getElementById('centigradetokelvin').value = this.value-273">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="centigrade" id='centigradetofahrenheit' onkeyup="document.getElementById('fahrenheittocentigrade').value = (this.value*9/5) + 32"> =
+            <input type="number" placeholder="fahrenheit" id="fahrenheittocentigrade" onkeyup="document.getElementById('centigradetofahrenheit').value = (this.value-32)*5/9">
+            </p>
+            <br>
+            </div>
+            </div>
+            <br>
+            <div id="Volume">
+            <h1 id="h17">Volume Conversion Meter</h1>
+            <p>
+            <input type="number" placeholder="liter" id='litertoml' onkeyup="document.getElementById('mltoliter').value = this.value*1000"> =
+            <input type="number" placeholder="ml" id="mltoliter" onkeyup="document.getElementById('litertoml').value = this.value/1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="decimetercube" id='decimetercubetocentimetercube' onkeyup="document.getElementById('centimetercubetodecimetercube').value = this.value*1000"> =
+            <input type="number" placeholder="centimetercube" id="centimetercubetodecimetercube" onkeyup="document.getElementById('decimetercubetocentimetercube').value = this.value/1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="metercube" id='metercubetocentimetercube' onkeyup="document.getElementById('centimetercubetometercube').value = this.value*1000000"> =
+            <input type="number" placeholder="centimetercube" id="centimetercubetometercube" onkeyup="document.getElementById('metercubetocentimetercube').value = this.value/1000000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="US tablespoon" id='tablespoontoteaspoon' onkeyup="document.getElementById('teaspoontotablespoon').value = this.value*3"> =
+            <input type="number" placeholder="US teaspoon" id="teaspoontotablespoon" onkeyup="document.getElementById('tablespoontoteaspoon').value = this.value/3">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="imperial tablespoon" id='tablespoontoteaspoon' onkeyup="document.getElementById('teaspoontotablespoon').value = this.value*3"> =
+            <input type="number" placeholder="imperial teaspoon" id="teaspoontotablespoon" onkeyup="document.getElementById('tablespoontoteaspoon').value = this.value/3">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="US liquid gallon" id='liquidgallontoliquidquart' onkeyup="document.getElementById('liquidquarttoliquidgallon').value = this.value*4"> =
+            <input type="number" placeholder="US liquid quart" id="liquidquarttoliquidgallon" onkeyup="document.getElementById('liquidgallontoliquidquart').value = this.value/4">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="US legal cup" id='legalcuptolitre' onkeyup="document.getElementById('litretolegalcup').value = this.value*0.24"> =
+            <input type="number" placeholder="Litre" id="litretolegalcup" onkeyup="document.getElementById('legalcuptolitre').value = this.value/0.24">
+            </p>
+            <br>
+           </div>
+            </div>
+           <div class="c">
+           <div id="Angle">
+           <h1 id="h18">Angle Conversion Meter</h1>
+           <p>
+           <input type="number" placeholder="degree" id='degreetoradian' onkeyup="document.getElementById('radiantodegree').value = this.value*3.142/180"> =
+           <input type="number" placeholder="radian" id="radiantodegree" onkeyup="document.getElementById('degreetoradian').value = this.value*180/3.142">
+           </p>
+           <br>
+           </div>      
+
+
+
+
+
+      </div>
+
+
+
+
+
+</body>
+
+</html>
