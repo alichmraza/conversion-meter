@@ -5,13 +5,12 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Conversions</title>
+      <title>Conversions Meter</title>
       <style>
             body {
                   /* background: #00c4ff; */
                   margin: 0px
             }
-
             #length {
                   width: 33%;
                   font-size: 10px;
@@ -69,7 +68,9 @@
 
             .b {background: hsla(202, 83%, 43%, 0.959);height:500px; width: 100%}
              
-             .c{background: #0dbdf3fd; height: 500px; display: block}
+            .c{background: #0dbdf3fd; height: 340px; display: block}
+             
+            .d{background: #eeff06fd; height: 400px; display: block}
             #Time{
                   width: 33%;
                   font-size: 10px;
@@ -144,7 +145,19 @@
             #h110{
                   font-size: 20px;
                   margin-right: 14%;
-                   margin-top: 0%; 
+                   margin-top: 0%;
+            }
+            #Force{
+                  width: 33%;
+                  font-size: 10px;
+                  float: left;
+                  margin-left: 0.5%;
+            }
+            #h111{
+                  font-size: 20px;
+                  margin-top: 0%;
+                  margin-left: 12%;
+
 
 
 
@@ -202,6 +215,11 @@
             </p>
             <br>
             <p>
+            <input type="number" placeholder="Inch" id='inchtofoot' onkeyup="document.getElementById('foottoinch').value = this.value/12"> =
+            <input type="number" placeholder="Foot" id="foottoinch" onkeyup="document.getElementById('inchtofoot').value = this.value*12">
+            </p>
+            <br>
+            <p>
             <input type="number" placeholder="Kilometer" id='kilometertomiles' onkeyup="document.getElementById('milestokilometer').value = this.value*0.62137"> =
             <input type="number" placeholder="Miles" id="milestokilometer" onkeyup="document.getElementById('kilometertomiles').value = this.value/0.62137">
             </p>
@@ -255,6 +273,11 @@
             </p>
             <br>
             <p>
+            <input type="number" placeholder="Miligram" id='miligramtomicrogram' onkeyup="document.getElementById('microgramtomiligram').value = this.value *1000"> =
+            <input type="number" placeholder="Microgram" id="microgramtomiligram" onkeyup="document.getElementById('miligramtomicrogram').value = this.value/1000">
+            </p>
+            <br>
+            <p>
             <input type="number" placeholder="Kilogram" id='kilogramtotonne' onkeyup="document.getElementById('tonnetokilogram').value = this.value /1000"> =
             <input type="number" placeholder="Tonne" id="tonnetokilogram" onkeyup="document.getElementById('kilogramtotonne').value = this.value*1000">
             </p>
@@ -285,6 +308,11 @@
             <p>
             <input type="number" placeholder="  Joule" id='jouletokilojoule' onkeyup="document.getElementById('kilojouletojoule').value = this.value /1000"> =
             <input type="number" placeholder="Kilojoule" id="kilojouletojoule" onkeyup="document.getElementById('jouletokilojoule').value = this.value*1000">
+            </p>
+            <br>
+            <p>
+            <input type="number" placeholder="  Joule" id='jouletoerg' onkeyup="document.getElementById('ergtojoule').value = this.value *10000000"> =
+            <input type="number" placeholder="Erg" id="ergtojoule" onkeyup="document.getElementById('jouletoerg').value = this.value/10000000">
             </p>
             <br>
             <p>
@@ -586,17 +614,53 @@
            </p>
            <br>
            <p>
-            <input type="number" placeholder="Torr" id='torrtoatmosphere' onkeyup="document.getElementById('atmospheretotorr').value = this.value/760"> =
-            <input type="number" placeholder="Atmosphere" id="atmospheretotorr" onkeyup="document.getElementById('torrtoatmosphere').value = this.value*760">
+           <input type="number" placeholder="Torr" id='torrtoatmosphere' onkeyup="document.getElementById('atmospheretotorr').value = this.value/760"> =
+           <input type="number" placeholder="Atmosphere" id="atmospheretotorr" onkeyup="document.getElementById('torrtoatmosphere').value = this.value*760">
            </p>
            <br>
-           </div>                    
+           </div>
+           </div>
 
-
-
-
-
-      </div>
+           <div class="d">
+           <div id="Force">
+           <h1 id="h111">Force Conversion Meter</h1>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontokilonewton' onkeyup="document.getElementById('kilonewtontonewton').value = this.value/1000"> =
+           <input type="number" placeholder="Kilo Newton" id="kilonewtontonewton" onkeyup="document.getElementById('newtontokilonewton').value = this.value*1000">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontoPoundals' onkeyup="document.getElementById('Poundalstonewton').value = this.value*7.23301"> =
+           <input type="number" placeholder="Poundals" id="Poundalstonewton" onkeyup="document.getElementById('newtontoPoundals').value = this.value/7.23301">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontoouncesforce' onkeyup="document.getElementById('ouncesforcetonewton').value = this.value*3.59694"> =
+           <input type="number" placeholder="Ounces Force" id="ouncesforcetonewton" onkeyup="document.getElementById('newtontoouncesforce').value = this.value/3.59694">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontodyne' onkeyup="document.getElementById('dynetonewton').value = this.value/100000"> =
+           <input type="number" placeholder="Dyne" id="dynetonewton" onkeyup="document.getElementById('newtontodyne').value = this.value*100000">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontogramforce' onkeyup="document.getElementById('gramforcetonewton').value = this.value/0.00980665"> =
+           <input type="number" placeholder="Gram-force(Pond)" id="gramforcetonewton" onkeyup="document.getElementById('newtontogramforce').value = this.value*0.00980665">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontokilogramforce' onkeyup="document.getElementById('kilogramforcetonewton').value = this.value/9.807"> =
+           <input type="number" placeholder="Kilogram-force(Kilo Pond)" id="kilogramforcetonewton" onkeyup="document.getElementById('newtontokilogramforce').value = this.value*9.807">
+           </p>
+           <br>
+           <p>
+           <input type="number" placeholder="Newton" id='newtontotonforce' onkeyup="document.getElementById('tonforcetonewton').value = this.value/8896.443 "> =
+           <input type="number" placeholder="Ton-force" id="tonforcetonewton" onkeyup="document.getElementById('newtontotonforce').value = this.value*8896.443 ">
+           </p>
+           <br>
+           </div>
+           </div>
 
 
 
